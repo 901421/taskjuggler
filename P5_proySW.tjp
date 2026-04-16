@@ -178,7 +178,7 @@ task WMGame "Web & Mobile Game" {
       allocate me
     }
     task tcloudDep "Cloud deployment" {
-      effort 40d
+      effort 35d
       allocate me
       depends WMGame.tcloud.tcloudEval
     }
