@@ -178,7 +178,7 @@ task WMGame "Web & Mobile Game" {
       allocate me
     }
     task tcloudDep "Cloud deployment" {
-      effort 5d
+      effort 30d
       allocate me
       depends WMGame.tcloud.tcloudEval
     }
@@ -190,7 +190,7 @@ task WMGame "Web & Mobile Game" {
       allocate dev2
       actual:effort 20d
       depends WMGame.twebF, WMGame.tback, WMGame.tmobileF, WMGame.tcloud
-      start 2026-05-15
+      minstart 2026-05-15
       }
 
     
